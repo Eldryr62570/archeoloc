@@ -1,6 +1,6 @@
 <div class="contentarea">
   <p>
-    Dans cet exemple, on illustre comment utiliser un flux média provenant de la webcam, en récupérer une image et créer un PNG à partir de celle-ci pour l'afficher sur la page.
+    Wow Dans cet exemple, on illustre comment utiliser un flux média provenant de la webcam, en récupérer une image et créer un PNG à partir de celle-ci pour l'afficher sur la page.
   </p>
   <div class="camera">
     <video id="video">Le flux vidéo n'est pas disponible.</video>
