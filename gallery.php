@@ -15,10 +15,21 @@
 </head>
 <body class="font-['Abel']">
     <?php include("asset/include/navbar.php") ?>
-<section class="overflow-hidden bg-gradient-to-b from-[#DA9D56] via-[#F5F5F5] to-[#FFFFFF]">
+
+    <section class="overflow-hidden bg-gradient-to-b from-[#DA9D56] via-[#F5F5F5] to-[#FFFFFF]">
     <div class='my-10'>
         <h1 class='text-4xl md:text-5xl	text-center text-black'>Galerie</h1>
     </div>
+
+    <form action="" class="px-4 flex flex-row space-x-4 items-center mb-5">
+        <select name="" id="" class="rounded">
+            <option value="">-- Choisissez un mot clef --</option>
+            <option value="dog">Romain</option>
+        </select>
+
+        <input type="submit" value="Rechercher" class="rounded px-3 py-0.5 bg-[#76470F] text-white h-full">
+    </form>
+
     <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
         <div class="-m-1 grid grid-cols-2 gap-2 md:-m-2">
             <div class="flex flex-wrap relative items-center justify-center" id="view_1">
