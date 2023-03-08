@@ -21,7 +21,7 @@
             <div class="output w-full">
                 <!-- <img id="photo" alt="L'image capturée apparaîtra ici."> -->
                 <form action="asset/php/photo.php" method="post" class="w-full flex flex-col items-center py-5 space-y-6">
-                    <input required type="image" id="photo" class="w-full">
+                    <input required type="image" id="photo" class="w-full" value="">
                     <input type="submit" value="Soumettre" class="bg-[#76470F] text-white rounded py-1 px-6">
                 </form>
             </div>
