@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,6 +11,10 @@
 </head>
 <body>
     <?php include("asset/include/navbar.php") ?>
+
+    <?php if (isset($_GET['success'])) { ?>
+        <p class="bg-green-100 text-green-700 py-1 px-3">Votre photo a bien été soumise</p>
+    <?php } ?>
 
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, ducimus, distinctio saepe quis inventore, nulla numquam tenetur quae quo adipisci doloribus! Ex molestiae tempore veritatis iusto. Nisi earum aspernatur ducimus!
     Labore quidem unde dolore, nobis ab sit rerum dicta alias, enim temporibus architecto accusantium consectetur quos, earum tenetur sequi? Molestiae, aspernatur! Inventore ipsam, vel soluta corporis quaerat delectus tenetur ea.

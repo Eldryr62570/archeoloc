@@ -1,6 +1,5 @@
 <?php
 
-var_dump($_POST);
-die;
+header("location: ../../index.php?success")
 
 ?>
