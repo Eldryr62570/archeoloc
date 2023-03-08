@@ -3,9 +3,9 @@
     <div class="w-px h-5 bg-slate-400 rounded"></div>
     <a href="photo.php"><img src="asset/img/Navbar/photo.png" alt=""></a>
     <div class="w-px h-5 bg-slate-400 rounded"></div>
-    <a href=""><img src="asset/img/Navbar/map.png" alt=""></a>
+    <a href="map.php"><img src="asset/img/Navbar/map.png" alt=""></a>
     <div class="w-px h-5 bg-slate-400 rounded"></div>
-    <a href=""><img src="asset/img/Navbar/gallerie.png" alt=""></a>
+    <a href="gallery.php"><img src="asset/img/Navbar/gallerie.png" alt=""></a>
     <div class="w-px h-5 bg-slate-400 rounded"></div>
     <a href="profil.php"><img src="asset/img/Navbar/profil.png" alt=""></a>
 </div>
