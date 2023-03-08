@@ -49,6 +49,10 @@ if ($not_in_bdd)
     $stmt->bindParam(3,$_POST['prenom_insc']);
     $stmt->bindParam(4,$password);
     $stmt -> execute();
+    $_SESSION['connected']=TRUE;
+    $_SESSION['email']=$_POST['email_insc'];
+    $_SESSION['nom']=$_POST['prenom_insc'];
+    $_SESSION['prenom']=$_POST['prenom_insc'];
     header('../../index.php');
 }
 else{
