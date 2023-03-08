@@ -19,9 +19,13 @@
             <img src="asset/img/logo.png" alt="">
             <h1 class="text-3xl font-semibold">ArchéoPlan</h1>
         </div>
+        <div class="mb-20">
+            <h2 class="text-xl font-semibold">L’Archéologie à votre portée</h2>
+        </div>
 
-        <div class="w-full px-4 text-xl">
-            <p>Bienvenue <span class="font-semibold text-[#76470F]">Prénom</span>,</p>
+        <div class="pt-5 flex flex-col space-y-5">
+            <a href="" class="bg-[#76470F] rounded py-1 px-12 text-white text-center">Inscription</a>
+            <a href="" class="bg-white rounded py-1 px-12 text-[#76470F] border border-[#76470F] text-center">Connection</a>
         </div>
     </div>
 </body>
