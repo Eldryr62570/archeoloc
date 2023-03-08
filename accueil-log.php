@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -24,8 +27,8 @@
         </div>
 
         <div class="pt-5 flex flex-col space-y-5">
-            <a href="" class="bg-[#76470F] rounded py-1 px-12 text-white text-center">Inscription</a>
-            <a href="" class="bg-white rounded py-1 px-12 text-[#76470F] border border-[#76470F] text-center">Connection</a>
+            <a href="inscription.php" class="bg-[#76470F] rounded py-1 px-12 text-white text-center">Inscription</a>
+            <a href="connexion.php" class="bg-white rounded py-1 px-12 text-[#76470F] border border-[#76470F] text-center">Connection</a>
         </div>
     </div>
 </body>
