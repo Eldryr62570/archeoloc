@@ -12,32 +12,23 @@
 </head>
 
 <body>
-
+    <?php include("asset/include/navbar.php") ?>
     <div id="map"></div>
-    <dialog id="mapDialog">
+    <dialog id="mapDialog" class="rounded-lg bg-gradient-to-b from-[#DA9D56] to-white w-full">
         <div class="overflow-hidden">
             <!-- dialog -->
             <div>
-                <div class="flex justify-between items-center border-b p-2 text-xl">
-                    <h6 class="text-xl font-bold">Mon fossile</h6>
+                <div class="flex justify-between items-center p-1 text-xl">
+                    <h6 class="text-xl font-bold">Fossile</h6>
                     <button type="button" id="cancelButton">✖</button>
                 </div>
-                <div class="p-2">
-                    <h4 class="font-bold"></h4>
-                    <aside class="max-w-lg mt-4 p-4 bg-yellow-100 border border-yellow-500">
-                        <p class="flex flex-column">
-                        <div>
-                            Fossile trouvé le : 01/02/2023
-                        </div>
-                        <div>
-                            A : Charleville-mézières
-                        </div>
-                        </p>
-                    </aside>
-                    <ul class="bg-gray-100 border m-8 px-4">
-                        <li class="my-4" id="">Amonite : </li>
-                        <img src="asset/img/amonite.jpg" alt="amonite" class="object-cover h-40">
-                    </ul>
+                <div class="p-1 flex flex-row space-x-4">
+                    <img src="asset/img/amonite.jpg" alt="amonite" class="rounded-full w-1/4">
+                    <div>
+                        <p class="text-lg font-semibold">Amonite</p>
+                        <p>Charleville-Mézières</p>
+                        <p class="text-sm text-slate-500">01/01/2023</p>
+                    </div>
                 </div>
             </div><!-- /dialog -->
         </div><!-- /overlay -->

@@ -14,13 +14,14 @@
     <title>Galerie</title>
 </head>
 <body class="font-['Abel']">
+    <?php include("asset/include/navbar.php") ?>
 <section class="overflow-hidden bg-gradient-to-b from-[#DA9D56] via-[#F5F5F5] to-[#FFFFFF]">
     <div class='my-10'>
         <h1 class='text-4xl md:text-5xl	text-center text-black'>Galerie</h1>
     </div>
     <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
         <div class="-m-1 grid grid-cols-2 gap-2 md:-m-2">
-            <div class="flex flex-wrap relative md:justify-center" id="view_1">
+            <div class="flex flex-wrap relative items-center justify-center" id="view_1">
                 <div class="w-full md:w-4/5 p-1 md:p-2">
                     <img
                         alt="Fossile"
@@ -28,11 +29,11 @@
                         src="asset/img/fossile-1.jpg"
                     />
                 </div>
-                <div class='absolute top-9 left-11 lg:top-[130px] lg:left-[210px]'>
+                <div class='absolute'>
                     <p class='font-["ABeeZee"] text-white md:text-2xl'>Fossile</p>
                 </div>
             </div>
-            <div class="flex flex-wrap relative md:justify-center" id="view_2">
+            <div class="flex flex-wrap relative items-center justify-center" id="view_2">
                 <div class="w-full md:w-4/5 p-1 md:p-2">
                     <img
                         id="view_2"
@@ -41,11 +42,11 @@
                         src="asset/img/fossile-1.jpg"
                     />
                 </div>
-                <div class='absolute top-9 left-11 lg:top-[130px] lg:left-[210px]'>
+                <div class='absolute'>
                     <p class='text-white font-["ABeeZee"] md:text-2xl'>Fossile</p>
                 </div>
             </div>
-            <div class="flex flex-wrap relative md:justify-center" id="view_3">
+            <div class="flex flex-wrap relative items-center justify-center" id="view_3">
                 <div class="w-full p-1 md:w-4/5 md:p-2">
                     <img
                         id="view_3"
@@ -54,21 +55,21 @@
                         src="asset/img/fossile-1.jpg"
                     />
                 </div>
-                <div class='absolute top-9 left-11 lg:top-[130px] lg:left-[210px]'>
+                <div class='absolute'>
                     <p class='text-white font-["ABeeZee"] md:text-2xl'>Fossile</p>
                 </div>
             </div>
-            <div class="flex flex-wrap relative md:justify-center" id="view_4">
-                <div class="w-full p-1 md:p-2 md:w-4/5">
+            <div class="flex flex-wrap relative items-center justify-center" id="view_4">
+                <div class="w-full p-1 md:w-4/5 md:p-2">
                     <img
                         id="view_4"
                         alt="Fossile"
                         class="block h-full w-full rounded-md object-cover object-center brightness-50"
                         src="asset/img/fossile-1.jpg"
                     />
-                    <div class='absolute top-9 left-11 lg:top-[130px] lg:left-[210px]'>
-                        <p class='text-white md:text-2xl font-["ABeeZee"]'>Fossile</p>
-                    </div>
+                </div>
+                <div class='absolute'>
+                    <p class='text-white font-["ABeeZee"] md:text-2xl'>Fossile</p>
                 </div>
             </div>
         </div>
