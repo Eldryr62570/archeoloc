@@ -10,21 +10,19 @@
 </head>
 <body>
     <div class="bg-gradient-to-b from-[#DA9D56] to-white">
-        <div class="contentarea">
+        <div class="contentarea space-y-5">
             <div class="camera flex flex-col justify-center items-center">
                 <video id="video" class="w-full h-[70vh]">Le flux vidéo n'est pas disponible.</video>
-                <button id="startbutton" class="rounded-full bg-white w-20 h-20"></button>
+                <button id="startbutton" class="rounded-full bg-white w-16 h-16 border-2 border-[#76470F] mt-5"></button>
             </div>
-            <canvas id="canvas"> </canvas>
+            <canvas id="canvas" class="hidden"> </canvas>
             <div class="output">
                 <!-- <img id="photo" alt="L'image capturée apparaîtra ici."> -->
                 <form action="asset/php/photo.php" method="post">
                     <input type="image" id="photo">
+                    <input type="submit">
                 </form>
             </div>
-            <p>
-                Consultez l'article <a href="https://developer.mozilla.org/fr/docs/Web/API/WebRTC_API/Taking_still_photos">Prendre des photos avec <code>getUserMedia()</code></a> pour en savoir plus sur les technologies utilisées ici.
-            </p>
         </div>
     </div>
 
