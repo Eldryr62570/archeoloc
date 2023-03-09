@@ -22,9 +22,12 @@
     </div>
 
     <form action="" class="px-4 flex flex-row space-x-4 items-center mb-5">
-        <select name="" id="" class="rounded">
+        <select name="" id="keyword-id" class="rounded">
             <option value="">-- Choisissez un mot clef --</option>
-            <option value="dog">Romain</option>
+            <option value="Antique;Fossile">Antique</option>
+            <option value="Insecte;Fossile">Insecte</option>
+            <option value="Préhistoire;fossile">Préhistoirique</option>
+            <option value="fossile">Fossile</option>
         </select>
 
         <input type="submit" value="Rechercher" class="rounded px-3 py-0.5 bg-[#76470F] text-white h-full">
@@ -41,7 +44,7 @@
                     />
                 </div>
                 <div class='absolute'>
-                    <p class='font-["ABeeZee"] text-white md:text-2xl'>Fossile</p>
+                    <p class='font-["ABeeZee"] text-white md:text-2xl'>Antique</p>
                 </div>
             </div>
             <div class="flex flex-wrap relative items-center justify-center" id="view_2">
@@ -54,7 +57,7 @@
                     />
                 </div>
                 <div class='absolute'>
-                    <p class='text-white font-["ABeeZee"] md:text-2xl'>Fossile</p>
+                    <p class='text-white font-["ABeeZee"] md:text-2xl'>Insecte</p>
                 </div>
             </div>
             <div class="flex flex-wrap relative items-center justify-center" id="view_3">
@@ -67,7 +70,7 @@
                     />
                 </div>
                 <div class='absolute'>
-                    <p class='text-white font-["ABeeZee"] md:text-2xl'>Fossile</p>
+                    <p class='text-white font-["ABeeZee"] md:text-2xl'>Préhistorique</p>
                 </div>
             </div>
             <div class="flex flex-wrap relative items-center justify-center" id="view_4">
@@ -86,10 +89,31 @@
         </div>
     </div>
 </section>
-<div id="myModal" class="modal">
+<div id="myModal" class="modal text-white">
     <img class="modal-content" id="img01">
     <div id="caption"></div>
+    <div id="livres"></div>
 </div>
 <script src='asset/js/gallery.js'></script>
 </body>
 </html>
+
+<script>
+    let keyword = document.querySelector("#keyword-id");
+    let livresDiv = document.querySelector("#livres");
+    keyword.addEventListener("change" , (e) =>{
+        let link = `https://api.nakala.fr/search?q=${keyword.value}&fq=&facet=fileExt%3Dpdf&order=relevance&page=1&size=25` ;
+        fetch(link)
+            .then((response) => response.json())
+            .then((data) => {
+                livresDiv.innerHTML = "";
+             
+                data.datas.map((e) => {
+                    livresDiv.append("<div class='text-white'>"+ e.citation +"</div>")
+                })
+            });
+            
+
+    })
+    
+</script>
