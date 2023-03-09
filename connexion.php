@@ -49,7 +49,11 @@
                 <input type='password' name='password_conn' class='rounded-[5px] border border-[#76470F] border-solid'>
             </label>
             <span class='text-[10px]'>Mot de passe oublié ?</span>
-            <input type='submit' value='Se connecter' class='bg-[#76470F] px-[26px] py-[2px] mt-14 rounded-[5px] text-[#F7F7F7] inline-block mx-auto'>
+
+            <div class="flex flex-row justify-between items-center mt-14 ">
+            <input type='submit' value='Se connecter' class='bg-[#76470F] px-[26px] py-[2px] rounded text-[#F7F7F7]'>
+            <a href="index.php" class="bg-black text-white rounded px-[26px] py-[2px]">Retour</a>
+            </div>
         </form>
     </div>
 
