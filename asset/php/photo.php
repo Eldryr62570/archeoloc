@@ -1,5 +1,5 @@
 <?php
 
-header("location: ../../index.php?success")
+header("location: ../../home.php?success")
 
 ?>

@@ -106,7 +106,10 @@ session_start();
                 }
                 ?>
             </label>
-            <input type='submit' value="S'inscrire" class='bg-[#76470F] px-[40px] py-[2px] mt-10 rounded-[5px] text-[#F7F7F7] inline-block mx-auto'>
+            <div class="flex flex-row justify-between items-center mt-14 ">
+            <input type='submit' value="S'inscrire" class='bg-[#76470F] px-[40px] py-[2px] rounded text-[#F7F7F7]'>
+            <a href="index.php" class="bg-black text-white rounded px-[26px] py-[2px]">Retour</a>
+            </div>
         </form>
     </div>
 </body>

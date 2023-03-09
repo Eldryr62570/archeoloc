@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,18 +7,21 @@ session_start();
     <title>ArchéoPlan - Index</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Abel&display=swap" rel="stylesheet">
+    <link href="asset/style/gallery.css" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-gradient-to-b from-[#DA9D56] to-white mb-12 flex flex-col items-center w-full">
-        <?php if (isset($_GET['success'])) { ?>
-            <p class="bg-green-100 text-green-700 py-1 px-3 w-full text-center">Votre photo a bien été soumise</p>
-        <?php } ?>
+    <div class="bg-gradient-to-b from-[#DA9D56] to-white mb-12 flex flex-col items-center justify-center w-full h-screen">
         <div class="py-10 flex flex-row space-x-2 items-center">
             <img src="asset/img/logo.png" alt="">
-            <h1 class="text-3xl font-semibold">ArchéoPlan</h1>
+            <h1 class='text-3xl font-semibold font-["ABeeZee"]'>ArchéoPlan</h1>
         </div>
-        <div class="mb-20">
-            <h2 class="text-xl font-semibold">L’Archéologie à votre portée</h2>
+        <div class="mb-32">
+            <h2 class="text-xl font-semibold">L'Archéologie à votre portée</h2>
         </div>
 
         <div class="pt-5 flex flex-col space-y-5">

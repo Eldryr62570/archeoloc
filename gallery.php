@@ -35,7 +35,7 @@
 
     <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
         <div class="-m-1 grid grid-cols-2 gap-2 md:-m-2">
-            <div class="flex flex-wrap relative items-center justify-center" id="view_1">
+            <div class="flex flex-wrap relative items-center justify-center cursor-pointer" id="view_1">
                 <div class="w-full md:w-4/5 p-1 md:p-2">
                     <img
                         alt="Fossile"
@@ -47,7 +47,7 @@
                     <p class='font-["ABeeZee"] text-white md:text-2xl'>Antique</p>
                 </div>
             </div>
-            <div class="flex flex-wrap relative items-center justify-center" id="view_2">
+            <div class="flex flex-wrap relative items-center justify-center cursor-pointer" id="view_2">
                 <div class="w-full md:w-4/5 p-1 md:p-2">
                     <img
                         id="view_2"
@@ -60,7 +60,7 @@
                     <p class='text-white font-["ABeeZee"] md:text-2xl'>Insecte</p>
                 </div>
             </div>
-            <div class="flex flex-wrap relative items-center justify-center" id="view_3">
+            <div class="flex flex-wrap relative items-center justify-center cursor-pointer" id="view_3">
                 <div class="w-full p-1 md:w-4/5 md:p-2">
                     <img
                         id="view_3"
@@ -73,7 +73,7 @@
                     <p class='text-white font-["ABeeZee"] md:text-2xl'>Préhistorique</p>
                 </div>
             </div>
-            <div class="flex flex-wrap relative items-center justify-center" id="view_4">
+            <div class="flex flex-wrap relative items-center justify-center cursor-pointer" id="view_4">
                 <div class="w-full p-1 md:w-4/5 md:p-2">
                     <img
                         id="view_4"
