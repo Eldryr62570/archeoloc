@@ -21,16 +21,14 @@
         <h1 class='text-4xl md:text-5xl	text-center text-black'>Galerie</h1>
     </div>
 
-    <form action="" class="px-4 flex flex-row space-x-4 items-center mb-5">
-        <select name="" id="keyword-id" class="rounded">
-            <option value="">-- Choisissez un mot clef --</option>
+    <form action="" class="px-5 flex flex-row space-x-4 items-center mb-5 w-full">
+        <select name="" id="keyword-id" class="rounded w-full">
+            <option value="" class="px-5">-- Choisissez un mot clef --</option>
             <option value="Antique;Fossile">Antique</option>
             <option value="Insecte;Fossile">Insecte</option>
             <option value="Préhistoire;fossile">Préhistoirique</option>
             <option value="fossile">Fossile</option>
         </select>
-
-        <input type="submit" value="Rechercher" class="rounded px-3 py-0.5 bg-[#76470F] text-white h-full">
     </form>
 
     <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
@@ -38,7 +36,7 @@
             <div class="flex flex-wrap relative items-center justify-center cursor-pointer" id="view_1">
                 <div class="w-full md:w-4/5 p-1 md:p-2">
                     <img
-                        alt="Fossile"
+                        alt="Antique"
                         class="block w-full rounded-md object-cover object-center brightness-50"
                         src="asset/img/fossile-1.jpg"
                     />
@@ -51,7 +49,7 @@
                 <div class="w-full md:w-4/5 p-1 md:p-2">
                     <img
                         id="view_2"
-                        alt="Fossile"
+                        alt="Insecte"
                         class="block h-full w-full rounded-md object-cover object-center brightness-50"
                         src="asset/img/fossile-1.jpg"
                     />
@@ -64,7 +62,7 @@
                 <div class="w-full p-1 md:w-4/5 md:p-2">
                     <img
                         id="view_3"
-                        alt="Fossile"
+                        alt="Préhistorique"
                         class="block h-full w-full rounded-md object-cover object-center brightness-50"
                         src="asset/img/fossile-1.jpg"
                     />
@@ -89,10 +87,10 @@
         </div>
     </div>
 </section>
-<div id="myModal" class="modal text-white">
+<div id="myModal" class="modal text-white pb-12">
     <img class="modal-content" id="img01">
-    <div id="caption"></div>
-    <div id="livres"></div>
+    <div id="caption" class="text-lg font-semibold"></div>
+    <div id="livres" class="px-5 text-sm"></div>
 </div>
 <script src='asset/js/gallery.js'></script>
 </body>
@@ -109,7 +107,7 @@
                 livresDiv.innerHTML = "";
              
                 data.datas.map((e) => {
-                    livresDiv.append("<div class='text-white'>"+ e.citation +"</div>")
+                    livresDiv.append(e.citation)
                 })
             });
             
