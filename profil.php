@@ -9,6 +9,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+<?php
+    session_start();
+    if (isset($_SESSION['connected'])){
+        if (!$_SESSION['connected']){
+        header('location:index.php');
+        }
+    }
+    ?>
     <?php include("asset/include/navbar.php") ?>
 
     <div class="bg-gradient-to-b from-[#DA9D56] to-white mb-12 flex flex-col items-center">
@@ -45,7 +53,7 @@
 
         <div class="pt-5 flex flex-col space-y-2">
             <a href="" class="bg-[#76470F] rounded py-1 px-12 text-white text-center">Modifier</a>
-            <a href="" class="bg-white rounded py-1 px-12 text-[#76470F] border border-[#76470F] text-center">Déconnecter</a>
+            <a href="asset/php/traitement_deconnexion.php" class="bg-white rounded py-1 px-12 text-[#76470F] border border-[#76470F] text-center">Déconnecter</a>
             <a href="" class="bg-red-700 rounded py-1 px-12 text-white text-center">Supprimer</a>
         </div>
     </div>

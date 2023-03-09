@@ -38,8 +38,9 @@ if ($_POST['password_insc']!=$_POST['password_insc_verif']){
 $sql = 'SELECT email FROM user WHERE email=?';
 $stmt = $pdo ->prepare($sql);
 $stmt -> bindParam(1,$_POST['email_insc']);
-$not_in_bdd=$stmt->execute();
-if ($not_in_bdd)
+$stmt->execute();
+$not_in_bdd=$stmt->fetch();
+if ($not_in_bdd==FALSE)
 {
     $sql='INSERT INTO user(email,nom,prenom,mdp) VALUES (?,?,?,?)';
     $stmt = $pdo->prepare($sql);
@@ -53,7 +54,7 @@ if ($not_in_bdd)
     $_SESSION['email']=$_POST['email_insc'];
     $_SESSION['nom']=$_POST['prenom_insc'];
     $_SESSION['prenom']=$_POST['prenom_insc'];
-    header('../../index.php');
+    header('location:../../index.php');
 }
 else{
     header("location:../../inscription.php?error=used_email");

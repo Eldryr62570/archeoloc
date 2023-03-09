@@ -14,6 +14,14 @@
     <title>ArchéoPlan - Galerie</title>
 </head>
 <body class="font-['Abel']">
+    <?php
+    session_start();
+    if (isset($_SESSION['connected'])){
+        if (!$_SESSION['connected']){
+        header('location:index.php');
+        }
+    }
+    ?>
     <?php include("asset/include/navbar.php") ?>
 
     <section class="overflow-hidden bg-gradient-to-b from-[#DA9D56] via-[#F5F5F5] to-[#FFFFFF]">

@@ -12,6 +12,14 @@
     </style>
 </head>
 <body>
+<?php
+    session_start();
+    if (isset($_SESSION['connected'])){
+        if ($_SESSION['connected']){
+            header('location:home.php');
+        }
+    }
+    ?>
     <div class='bg-gradient-to-b from-[#DA9D56] via-[#F5F5F5] to-[#FFFFFF] flex flex-col items-center font-["Abel"] pt-14'>
         <span class='text-[2.5em]'>Connexion</span>
         <!-- nom des formulaires:   email_conn
