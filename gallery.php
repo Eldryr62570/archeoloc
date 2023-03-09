@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Abel&display=swap" rel="stylesheet">
     <link href="asset/style/gallery.css" rel="stylesheet">
-    <title>Galerie</title>
+    <title>ArchéoPlan - Galerie</title>
 </head>
 <body class="font-['Abel']">
     <?php include("asset/include/navbar.php") ?>
