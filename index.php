@@ -27,7 +27,7 @@
             <h1 class='text-3xl font-semibold font-["ABeeZee"]'>ArchéoPlan</h1>
         </div>
         <div class="mb-32">
-            <h2 class="text-xl font-semibold">L'Archéologie à votre portée</h2>
+            <h2 class="text-xl font-semibold">Explorez l’Histoire qui vous entoure</h2>
         </div>
 
         <div class="pt-5 flex flex-col space-y-5">
