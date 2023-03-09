@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+<?php
+    session_start();
+    if (!isset($_SESSION['connected'])){
+        header("location: index.php");
+    }
+    ?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +15,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<?php
-    session_start();
-    if (isset($_SESSION['connected'])){
-        if (!$_SESSION['connected']){
-        header('location:index.php');
-        }
-    }
-    ?>
     <?php include("asset/include/navbar.php") ?>
     
     <div class="bg-gradient-to-b from-[#DA9D56] to-white mb-12">

@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['connected'])){
+        header("location: index.php");
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,14 +18,6 @@
 </head>
 
 <body>
-<?php
-    session_start();
-    if (isset($_SESSION['connected'])){
-        if (!$_SESSION['connected']){
-        header('location:index.php');
-        }
-    }
-    ?>
     <?php include("asset/include/navbar.php"); ?>
     <div id="map"></div>
     <dialog id="mapDialog" class="rounded-lg bg-gradient-to-b from-[#DA9D56] to-white w-full">

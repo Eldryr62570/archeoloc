@@ -1,4 +1,10 @@
 
+<?php
+    session_start();
+    if (!isset($_SESSION['connected'])){
+        header("location: index.php");
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,14 +22,6 @@
     <link href="asset/style/gallery.css" rel="stylesheet">
 </head>
 <body>
-    <?php
-    session_start();
-    if (isset($_SESSION['connected'])){
-        if (!$_SESSION['connected']){
-        header('location:index.php');
-        }
-    }
-    ?>
     <?php include("asset/include/navbar.php") ?>
 
     <div class="bg-gradient-to-b from-[#DA9D56] to-white mb-12 flex flex-col items-center w-full">
