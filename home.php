@@ -8,6 +8,12 @@
     <title>ArchéoPlan - Accueil</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Abel&display=swap" rel="stylesheet">
+    <link href="asset/style/gallery.css" rel="stylesheet">
 </head>
 <body>
     <?php include("asset/include/navbar.php") ?>
@@ -18,7 +24,7 @@
         <?php } ?>
         <div class="py-10 flex flex-row space-x-2 items-center">
             <img src="asset/img/logo.png" alt="">
-            <h1 class="text-3xl font-semibold">ArchéoPlan</h1>
+            <h1 class='text-3xl font-semibold font-["ABeeZee"]'>ArchéoPlan</h1>
         </div>
 
         <div class="w-full px-4 text-xl">
