@@ -10,6 +10,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <?php
+    session_start();
+    if (isset($_SESSION['connected'])){
+        if (!$_SESSION['connected']){
+        header('location:index.php');
+        }
+    }
+    ?>
     <?php include("asset/include/navbar.php") ?>
 
     <div class="bg-gradient-to-b from-[#DA9D56] to-white mb-12 flex flex-col items-center w-full">

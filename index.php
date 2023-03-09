@@ -9,6 +9,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <?php
+    session_start();
+    if (isset($_SESSION['connected'])){
+        if ($_SESSION['connected']){
+            header('location:home.php');
+        }
+    }
+    ?>
     <div class="bg-gradient-to-b from-[#DA9D56] to-white mb-12 flex flex-col items-center justify-center w-full h-screen">
         <div class="py-10 flex flex-row space-x-2 items-center">
             <img src="asset/img/logo.png" alt="">

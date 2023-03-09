@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +12,14 @@ session_start();
     </style>
 </head>
 <body>
+<?php
+    session_start();
+    if (isset($_SESSION['connected'])){
+        if ($_SESSION['connected']){
+            header('location:home.php');
+        }
+    }
+    ?>
 <div class='bg-gradient-to-b from-[#DA9D56] via-[#F5F5F5] to-[#FFFFFF] flex flex-col items-center font-["Abel"] pt-8'>
         <span class='text-[2.5em]'>Inscription</span>
         <!-- nom des formulaires:   email_insc

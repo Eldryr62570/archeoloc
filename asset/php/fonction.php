@@ -2,7 +2,7 @@
 function connect_bdd($email,$password,$bdd)
 {
 
-    $sql = "SELECT mdp FROM `user` WHERE email=? LIMIT 1";
+    $sql = "SELECT * FROM `user` WHERE email=? LIMIT 1";
     $stmt = $bdd ->prepare($sql);
     $stmt -> bindParam(1,$email);
     $stmt->execute();
@@ -14,6 +14,9 @@ function connect_bdd($email,$password,$bdd)
     if (password_verify($password,$pass_in_bdd['mdp']))
     {
         // l'utilisateur a rentré le bon mot de passe et se connecte
+        $_SESSION['email']=$pass_in_bdd['email'];
+        $_SESSION['nom']=$pass_in_bdd['nom'];
+        $_SESSION['prenom']=$pass_in_bdd['prenom'];
         return "connected";
     }
     else    

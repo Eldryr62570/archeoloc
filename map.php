@@ -12,7 +12,15 @@
 </head>
 
 <body>
-    <?php include("asset/include/navbar.php") ?>
+<?php
+    session_start();
+    if (isset($_SESSION['connected'])){
+        if (!$_SESSION['connected']){
+        header('location:index.php');
+        }
+    }
+    ?>
+    <?php include("asset/include/navbar.php"); ?>
     <div id="map"></div>
     <dialog id="mapDialog" class="rounded-lg bg-gradient-to-b from-[#DA9D56] to-white w-full">
         <div class="overflow-hidden">
